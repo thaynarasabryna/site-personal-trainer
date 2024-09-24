@@ -1,0 +1,390 @@
+.main {
+    padding: 10px;
+    background-color: #bea16230;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    height: 95vh;
+    background-image: url('../images/bannerteste2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.logo-contato {
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Alumni Sans', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    text-decoration: none;
+}
+    
+.menu-toggle {
+    display: none;
+}
+
+.banner {
+    background-color: hsl(36, 22%, 55%);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text {
+    color: white;
+}
+
+.banner h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.banner p {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Alumni Sans', sans-serif;
+} 
+
+.servicos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #bea16230;
+    gap: 10px;
+    height: 100vh;
+}
+
+.servico {
+    width: 350px;
+    height: 350px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.servico:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(158, 157, 157, 0.3);
+}
+
+.servico img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.servico-text {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servico h2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    margin-bottom: -5px;
+    /* font-family: 'Modak', cursive; */
+    font-weight: bold;
+    font-family: 'Alumni Sans', sans-serif;
+
+}
+
+.servico p {
+    font-size: 20px;
+    font-family: 'Alumni Sans', sans-serif;
+
+    text-align: center;
+    color: black;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+.bio-image {
+    flex: 1;
+    height: 100%;
+}
+
+.bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    background-color: transparent;
+    
+}
+
+.bio h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    /* font-family: 'Modak', cursive; */
+    font-weight: bold;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.bio p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #666;
+    font-family: 'Alumni Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 80%;
+} 
+
+.contato {
+    text-align: end;
+    padding: 50px 0;
+    background-color: #6153355f;
+    color: white;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.divContatoLeft {
+    width: 50%;
+    text-align: left;
+}
+
+.divContatoRight {
+    width: 50%;
+}
+
+.divContatoRight h2 {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 35px;
+    margin-right: 30px;
+    /* text-transform: uppercase; */
+}
+
+.contato-btn {
+    padding: 12px 30px;
+    text-align: end;
+    margin-right: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.contato-btn:hover {
+    text-decoration: none;
+    background-color: #ff9800;
+    border: 2px solid #ff9800;
+    color: white;
+    transform: scale(1.05);
+}
+
+.contato-btn:focus {
+    outline: none;
+}
+
+.contato-btn i {
+    margin-right: 8px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons div:first-child a {
+    color: #333;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons div:first-child a:hover {
+    color: #ff9800;
+}
+
+.social-icons div:last-child p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: calc(100vh - 80px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+        color: white;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle i {
+        font-size: 30px;
+        color: white;
+    }
+
+    .menu-open nav ul {
+        display: flex;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+    }
+
+    .servico {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .bio-image, .bio {
+        width: 100%;
+        height: auto;
+    }
+
+    .bio h2 {
+        font-size: 2rem;
+    }
+
+    .bio p {
+        font-size: 1.2rem;
+    }
+
+    .contato {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .divContatoLeft, .divContatoRight {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato-btn {
+        margin-top: 20px;
+    }
+    
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons div:last-child p {
+        margin-top: 10px;
+    }
+}
